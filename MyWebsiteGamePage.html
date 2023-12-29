@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Michael's Website - Game</title>
+        <link href="MyWebsiteStyle.css" rel="stylesheet" type="text/css">
+        <script src="MyWebsiteGameScript.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Michael Vlaar</h1>
+            <nav>
+                <div class="navigatie">
+                    <a href="MyWebsiteHomePage.html">Home</a>
+                </div>
+                <div class="navigatie">
+                    <a href="MyWebsiteWerkErvaring.html">Ervaring</a>
+                </div>
+                <div class="navigatie">
+                    <p class="huidig">Game</p>
+                </div>
+            </nav>
+        </header>
+        <article>
+            <h2>Game</h2>
+            <section id="GameScreen">
+                <p id="GameTekst">Druk op start!</p>
+                <!-- <button onclick="test()" type="button" id="templateKnop" class="gameButton">templateButton</button> -->
+                <!-- OVERWORLD -->
+                <div id="GameOverworld" class="GameDiv">
+                    <button onclick="bossenSelectie()" type="button" id="bossenKnop" class="overworldButton">De Bossen</button>
+                    <button onclick="heideSelectie()" type="button" id="heideKnop" class="overworldButton">De heides</button>
+                    <br>
+                    <button onclick="rivierSelectie()" type="button" id="rivierKnop" class="overworldButton">De rivier</button>
+                    <button onclick="stadSelectie()" type="button" id="stadKnop" class="overworldButton">De stad</button>
+                    <button onclick="akkersSelectie()" type="button" id="akkersKnop" class="overworldButton">De akkers</button>
+                    <br>
+                    <button onclick="heuvelsSelectie()" type="button" id="heuvelsKnop" class="overworldButton">De heuvels</button>
+                    <button onclick="bergSelectie()" type="button" id="bergKnop" class="overworldButton">De berg</button>
+                </div>
+                <div id="GameStart" class="GameDiv">
+                    <!-- START -->
+                    <button onclick="gameSetUp()" type="button" id="startKnop" class="gameButton">Start</button>
+                    <button onclick="overworldFunction()" type="button" id="overworldKnop" class="gameButton">Klaar</button>
+                    <button onclick="conflict()" type="button" id="conflictKnop" class="gameButton">Vechten</button>
+                    <button onclick="test()" type="button" id="respawnKnop" class="gameButton">Opnieuw</button>
+                    <!--KLASSESELECTIEKNOPPEN-->
+                    <button onclick="krijgerSelectie()" type="button" id="krijgerSelectieKnop" class="gameButton">Krijger</button>
+                    <button onclick="jagerSelectie()" type="button" id="jagerSelectieKnop" class="gameButton">Jager</button>
+                    <button onclick="magiërSelectie()" type="button" id="magiërSelectieKnop" class="gameButton">Magiër</button>
+                    <!--WAPENSELECTIEKNOPPEN-->
+                    <button onclick="schildSelectie()" type="button" id="schildSelectieKnop" class="gameButton">Schild en speer</button>
+                    <button onclick="boogSelectie()" type="button" id="boogSelectieKnop" class="gameButton">Pijl en boog</button>
+                    <button onclick="spreukSelectie()" type="button" id="spreukSelectieKnop" class="gameButton">Spreuk</button>
+                    <!--PANTSERSELECTIEKNOPPEN-->
+                    <button onclick="lichtSelectie()" type="button" id="lichtSelectieKnop" class="gameButton">Licht Pantser</button>
+                    <button onclick="middelSelectie()" type="button" id="middelSelectieKnop" class="gameButton">Middel Pantser</button>
+                    <button onclick="zwaarSelectie()" type="button" id="zwaarSelectieKnop" class="gameButton">Zwaar Pantser</button>
+                    <!--TERUGKNOPPEN-->
+                    <button onclick="klasseSelectieTerug()" type="button" id="klasseSelectieTerugKnop" class="gameButton">Terug naar Klasse</button>
+                    <button onclick="wapenSelectieTerug()" type="button" id="wapenSelectieTerugKnop" class="gameButton">Terug naar Wapen</button>
+                    <button onclick="pantserSelectieTerug()" type="button" id="pantserSelectieTerugKnop" class="gameButton">Terug naar Pantser</button>
+                </div>
+                <div id="GameMain" class="GameDiv">
+                    <button onclick="scoreVergelijking()" type="button" id="scoreVergelijkingKnop" class="gameButton">Verder</button>
+                    <!--WAPENWISSELEN-->
+                    <button onclick="wapenWisselen()" type="button" id="wapenWisselenKnop" class="gameButton">Wisselen van Wapen</button>
+                    <button onclick="schildWisselen()" type="button" id="schildWisselenKnop" class="gameButton">Schild en speer</button>
+                    <button onclick="boogWisselen()" type="button" id="boogWisselenKnop" class="gameButton">Pijl en boog</button>
+                    <button onclick="spreukWisselen()" type="button" id="spreukWisselenKnop" class="gameButton">Spreuk</button>
+                    <!--PANTSERWISSELEN-->
+                    <button onclick="pantserWisselen()" type="button" id="pantserWisselenKnop" class="gameButton">Wisselen van Pantser</button>
+                    <button onclick="lichtWisselen()" type="button" id="lichtWisselenKnop" class="gameButton">Licht Pantser</button>
+                    <button onclick="middelWisselen()" type="button" id="middelWisselenKnop" class="gameButton">Middel Pantser</button>
+                    <button onclick="zwaarWisselen()" type="button" id="zwaarWisselenKnop" class="gameButton">Zwaar Pantser</button>
+                </div>   
+            </section>
+            <section id="GameButtons">
+                <p id="gevechtsLog"></p> 
+            </section>
+        </article>
+        <footer>
+            <h5><a href= "mailto: michael.vlaar@live.nl">michael.vlaar@live.nl</a> --- <a href="tel:+31631260693">+31 6 3126 0693</a></h5>
+        </footer>  
+    </body>
+</html>
