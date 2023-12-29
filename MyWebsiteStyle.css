@@ -1,0 +1,449 @@
+﻿* {
+    margin: 0px, auto;
+}
+
+    /* Divs */
+
+body {
+    font-family: 'Garamond';
+    color: lightgrey;
+    background-color: black;
+    margin: 0rem auto;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+article {
+    padding: 0rem 1rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1rem;
+    top: 0;
+    background-color: darkred;
+    border: 0.5rem inset grey;
+    margin: 0px auto;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: top;
+    right: 0px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom:0px;
+    background-color: black;
+    z-index: 10;
+    padding: 0rem;
+}
+
+table {
+    width: 100%;
+}
+
+    /* Element tags */
+
+h1 {
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: top;
+    margin: auto 0rem;
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.25em 0em;
+    width: 30rem;
+    left: 0px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: grey;
+    position: absolute;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: darkred;
+    color: grey;
+    text-decoration: underline;
+    border: 0.5rem inset grey;
+    border-radius: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    margin: 1rem 0rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: black;
+    color: grey;
+    border: 0.5rem solid grey;
+    border-radius: 5px;
+}
+
+h4 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+h5 {
+    color: red;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0px;
+}
+
+a {
+    color: darkred;
+}
+
+img {
+    border: 0.5rem inset black;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: black;
+    text-align: justify;
+    background-color: grey;
+    border: 0.5rem inset black;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+ul {
+    text-align: justify;
+    padding: 1rem 3rem;
+    border: 0.5rem inline black;
+}
+
+ul ul {
+    padding: 0rem 2rem;
+    text-align: justify;
+}
+
+li {
+    color: black;
+}
+
+th {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0.5rem inset black;
+    padding: 0.5rem 1rem;
+    background-color: grey;
+    color: black;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+    border: 0.25rem inset black;
+    padding: 0.5rem 1rem;
+    background-color: grey;
+    color: black;
+}
+
+button {
+    background-color:black;
+    display: block;
+    text-align: center;
+    border: 0.5rem inset grey;
+    padding: 0.5rem;
+    font-weight: bold;
+    width: 25rem;
+    position: relative;
+    border-radius: 5px;
+    margin: auto;
+    color: darkred;
+    cursor: pointer;
+}
+
+figcaption {
+    padding-top: 1rem;
+    color: grey;
+    font-weight: bold;
+    opacity: 75%;
+}
+    /* ID's */
+
+
+#infoovermij {
+    width: 100%; 
+    text-align: center;
+    position: relative;
+}
+
+#overmij {
+    text-align: justify;
+}
+
+#gegevens {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#overig {
+    text-align: initial;
+    margin-bottom: 0px;
+    bottom: 0;
+}
+
+#overzicht {
+    width: 27%;
+    background-color: darkred;
+    padding: 1rem;
+    z-index: 9;
+    top: 7rem;
+    bottom: 2rem;
+    right: 1rem;
+    border: 0.5rem inset grey;
+    position: fixed;
+    vertical-align: top;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+
+#ervaringtabel {
+    text-align: center;
+}
+
+#werkervaring{
+    display: block;
+    width: 67%;
+}
+
+/* Game Id's */
+
+#GameScreen {
+    height: 35rem;
+    border: 0.5rem inset grey;
+    overflow-y: auto;
+}
+
+#GameTekst {
+    background-color: black;
+    color: green;
+    text-align: justify;
+}
+
+#gevechtsLog {
+    background-color: black;
+    color: green;
+    text-align: justify;
+    overflow-y: scroll;
+    height: 10rem;
+    overflow-anchor: auto;
+}
+
+#startKnop {
+    display: inline-block;
+}
+
+/* Classes */
+.navigatie {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+    border: 0.5rem inset grey;
+    border-radius: 5px;
+    padding: 0.25em 0em;
+    width: 10rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0,5rem;
+    word-spacing: 0,5rem;
+    background-color: black;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p.huidig {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5rem;
+    color: grey;
+    text-align: center;
+    text-decoration: underline;
+    border: none;
+    background-color: black;
+}
+
+.overmij {
+    display: inline-block;
+    position: static;
+    padding: 1rem;
+    margin: 1rem;
+    height: 40rem;
+    vertical-align: top;
+    width: 30rem;
+    border: 0.5rem inset grey;
+    background-color: darkred;
+}
+
+    /* Classes binnen Gegevens */
+
+.info {
+    width: 30rem;
+    height: 40rem;
+    text-align: justify;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    border: 0.5rem inset grey;
+    background-color: darkred;
+    border-radius: 5px;
+}
+
+.info ul {
+    font-size: 1.5rem;
+    list-style-type: square;
+    background-color: grey;
+    border: 0.5rem inline black;
+}
+
+.info ul ul {
+    list-style-type:circle;
+}
+
+    /* Classes binnen Ervaring */
+
+.werkervaring {
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    border: 0.5rem inset grey;
+    background-color: darkred;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 3rem;
+}
+
+.werkzaamheden {
+    vertical-align: top;
+    left: 0px;
+    position: relative;
+    display: none;
+    text-align: left;
+    border: 0.5rem inset black;
+    background-color: grey;
+    border-radius: 5px;
+    margin: 1rem 0rem;
+}
+
+.werkzaamheden li {
+    font-size: 1.25rem;
+    list-style-type:square;
+}
+
+.werkzaamheden li li {
+    list-style-type: circle;
+}
+
+.banner {
+    text-align: center;
+    position: relative;
+    float: none;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.werkfoto {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ervaringanchor {
+    z-index: 0;
+    position: absolute;
+    top: -15rem;
+}
+
+[target="_blank"] {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Game classes */
+.gameButton:hover {
+    border-color: darkred;
+    transition-duration: 0.3s;
+}
+
+.gameButton {
+    font-weight: bold;
+    display: none;
+    vertical-align: top;
+    margin: 1rem;
+    border: 0.5rem inset grey;
+    border-radius: 5px;
+    padding: 0.25rem 0.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0,5rem;
+    word-spacing: 0,5rem;
+    background-color: black;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 10rem;
+    height: 5rem;
+}
+
+.overworldButton:hover {
+    border-color: darkred;
+    transition-duration: 0.3s;
+}
+
+.overworldButton {
+    font-weight: bold;
+    display: none;
+    vertical-align: top;
+    margin: 1rem;
+    border: 0.5rem inset grey;
+    border-radius: 5px;
+    padding: 0.25em 0.25em;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0,5rem;
+    word-spacing: 0,5rem;
+    background-color: black;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+.GameDiv {
+    text-align: center;
+}
