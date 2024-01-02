@@ -1094,3 +1094,5 @@ const gevechtResultaat = () => {
         document.getElementById("gevechtsLog").innerHTML += `<br>Het is een standoff. `;
     };
 };
+
+
