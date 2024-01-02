@@ -9,9 +9,9 @@
 
     //Het Avonturier object. Dit Object bewaart info over jouw klasse, wapens en pantser.
 const avonturier = {
-    Klasse: "Krijger",  //!!!!!!!!!//
-    Wapen: "Schild",    //!!!!!!!!!//
-    Pantser: "Zwaar",   //!!!!!!!!!//
+    Klasse: "",
+    Wapen: "",    
+    Pantser: "",   
     Locatie: "",
     Levenspunten: 10,
     Scores: {
