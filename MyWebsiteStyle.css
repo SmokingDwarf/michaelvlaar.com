@@ -231,6 +231,7 @@ figcaption {
 
 #ervaringtabel {
     text-align: center;
+    overflow-y: scroll;
 }
 
 #werkervaring{
@@ -320,7 +321,7 @@ p.huidig {
     border: 0.5rem inset grey;
     background-color: darkred;
     border-radius: 5px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .info ul {
