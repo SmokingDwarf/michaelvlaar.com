@@ -155,7 +155,7 @@ const monsterArray = [{
             ` Je draagt deze wapens altijd bij je, en kun je voor aanvang van een conflict uitwisselen.<br>` +
             `-   Een <b>Schild</b> staat je toe om vijandige projectielen met gemak af te slaan, en is dus <em>sterk</em> tegen <b>bogen</b>. Vijandige <b>magie</b> slaat echter recht door of om je <b>Schild</b> heen, en maakt je <em>kwetsbaar</em>.<br>` +
             `-   Een <b>Boog</b> stelt je in staat om een vijand te bestoken met pijlen voordat deze zijn langzame <b>Spreuken</b> kan afvuren, waardoor je hier <em>sterk</em> tegen bent. Een <b>Schild</b> blokkeert echter je projectielen en maakt je <em>kwetsbaar</em>.<br>` +
-            `-   Je <b>Spreuken</b> laten je om door of om de verdediging van een <b>Schild</b> heen te vechten waardoor je hier <em>sterk</em> tegen bent, maar je hebt tijd nodig om de <b>Spreuken</b> uit te voeren wat je <em>kwetsbaar</em> maakt voor <b>bogen</b>.`;
+            `-   Je <b>Spreuken</b> stellen je in staat om door de verdediging van een <b>Schild</b> heen te vechten waardoor je hier <em>sterk</em> tegen bent, maar je hebt tijd nodig om de <b>Spreuken</b> uit te voeren wat je <em>kwetsbaar</em> maakt voor <b>bogen</b>.`;
             //STARTKNOP
             document.getElementById("startKnop").innerHTML = "Verder naar Pantser";
             document.getElementById("startKnop").style.display = "inline-block";
