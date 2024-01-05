@@ -320,6 +320,7 @@ p.huidig {
     border: 0.5rem inset grey;
     background-color: darkred;
     border-radius: 5px;
+    overflow: scroll;
 }
 
 .info ul {
