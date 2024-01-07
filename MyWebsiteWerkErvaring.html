@@ -476,11 +476,11 @@
         <script>
             const lebowbpWerkzaamhedenTonen = () => {
                 const x = document.getElementById("lebowbpwerkzaamheden");
-                if (x.style.display === none) {
-                    x.style.display = block;
+                if (x.style.display === "none") {
+                    x.style.display = "block";
                     document.getElementById("lebowbpbutton").innerHTML = "Werkzaamheden verbergen";
                 } else {
-                    x.style.display = none;
+                    x.style.display = "none";
                     document.getElementById("lebowbpbutton").innerHTML = "Werkzaamheden tonen";
                 }
             };
