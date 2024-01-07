@@ -475,11 +475,12 @@
     </body>
         <script>
             const lebowbpWerkzaamhedenTonen = () => {
-                if (document.getElementById("lebowbpwerkzaamheden").style.display === none) {
-                    document.getElementById("lebowbpwerkzaamheden").style.display = block;
+                const x = document.getElementById("lebowbpwerkzaamheden");
+                if (x.style.display === none) {
+                    x.style.display = block;
                     document.getElementById("lebowbpbutton").innerHTML = "Werkzaamheden verbergen";
                 } else {
-                    document.getElementById("lebowbpwerkzaamheden").style.display = none;
+                    x.style.display = none;
                     document.getElementById("lebowbpbutton").innerHTML = "Werkzaamheden tonen";
                 }
             };
