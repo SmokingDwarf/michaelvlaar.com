@@ -24,7 +24,7 @@ const avonturier = {
         Kuras: false,
         Polsbeschermers: false,
         Amulet: false,
-        Mantel: false,
+        Mantel: false,  
         Zwaard: false,
         Pijlen:false,
     },
