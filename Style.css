@@ -124,6 +124,8 @@ a {
 img {
     border: 0.5rem inset black;
     border-radius: 5px;
+    width: 90%;
+    height: auto;
 }
 
 p {
@@ -194,8 +196,7 @@ figcaption {
     /* ID's */
 
 
-#infoovermij {
-    width: 100%; 
+#infoovermij { 
     text-align: center;
     position: relative;
 }
@@ -304,14 +305,35 @@ p.huidig {
 
 .overmij {
     display: inline-block;
-    position: static;
+    position: relative;
     padding: 1rem;
     margin: 1rem;
     vertical-align: top;
     border: 0.5rem inset grey;
     background-color: darkred;
+    max-width: 50%;
+    min-height: 25%;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
+
+
+/*h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem 0rem;
+    padding: 1rem 0rem;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: darkred;
+    color: grey;
+    text-decoration: underline;
+    border: 0.5rem inset grey;
+    border-radius: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} 
+*/
     /* Classes binnen Gegevens */
 
 .info {
@@ -323,7 +345,10 @@ p.huidig {
     border: 0.5rem inset grey;
     background-color: darkred;
     border-radius: 5px;
-    overflow-y: scroll;
+    min-height: 25%;
+    max-width: 50%;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .info ul {
