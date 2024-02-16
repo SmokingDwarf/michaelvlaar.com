@@ -10,7 +10,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="col-xs-12 col-s-12 col-m-12">
                 <div class="navigatie">
                     <a href="Home.html">Home</a>
                 </div>
@@ -23,80 +23,87 @@
             </nav>
         </header>
         <article id="ervaring">
-
-            <aside id="overzicht">
-                <h3>Overzicht</h3>
-                <table id="ervaringtabel">
+            <aside id="overzichtsectie" class="col-xs-12 col-s-4 col-m-4">
+                <h1>Overzicht</h1>
+                <table id="overzichttabel">
                     <!--Een tabel met een overzicht van alle bedrijven waar ik heb gewerkt-->
                     <thead>
-                        <tr>
+                        <tr class="rowoneven">
                             <th>Functie</th>
                             <th>Bedrijf</th>
                         </tr>
                     </thead>
                     <tbody>  
-                        <tr>
+                        <tr class="roweven">
                             <td>Bedrijfsleider</td>
                             <td><a href="#lebowbpanchor">Lebowski & Bar Pasta</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Floormanager</td>
                             <td><a href="#asteriamanageranchor">Hotel Restaurant Asteria</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Logistiek medewerker</td>
                             <td><a href="#dfdsanchor">DFDS</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Leidinggevende</td>
                             <td><a href="#pachoanchor">PACHO</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Medewerker bediening</td>
                             <td><a href="#asteriamedewerkeranchor">Hotel Restaurant Asteria</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Eerste medewerker</td>
                             <td><a href="#sjalotanchor">Restaurant de Sjalot</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Medewerker en barhoofd</td>
                             <td><a href="#festivalanchor">Verschillende festivals</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Leidinggevende stage</td>
                             <td><a href="#tasteanchor">Taste of Belgium</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Receptie stage</td>
                             <td><a href="#clausanchor">Claus Park Collection</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Bediening stage</td>
                             <td><a href="#jachtslotanchor">Jachtslot de Mookerheide</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Oproepkracht bediening</td>
                             <td><a href="#rivaanchor">Riva</a></td>
                         </tr>
-                        <tr>
+                        <tr class="rowoneven">
                             <td>Oproepkracht bediening</td>
                             <td><a href="#parcsanchor">Center Parcs Heijderbosch</a></td>
                         </tr>
-                        <tr>
+                        <tr class="roweven">
                             <td>Oproepkracht snackbar</td>
                             <td><a href="#kisteanchor">Cafetaria Kiste Trui</a></td>
                         </tr>
                     </tbody>
                 </table>
+                <p>Klik om snel te navigeren!</p>
             </aside>
-            <section id="werkervaring">
-                <h2 id="ervaringh2">Ervaring</h2>
+            <section id="ervaringsectie" class="col-xs-12 col-s-8 col-m-8">
+                <h1>Ervaring</h1>
                 <div id="lebowbp" class="werkervaring">
                     <a id="lebowbpanchor" class="ervaringanchor"></a>
                     <!--Mijn ervaring binnen Lebowski en Bar Pasta-->
-                    <h3>Bedrijfsleider Lebowski & Bar Pasta; Nijmegen: 2022</h3>
+                    <h2>Bedrijfsleider</h2>
+                    <h4>Lebowski & Bar Pasta; Nijmegen: 2022</h4>
                     <p>Bij <a href="https://www.bar-lebowski.nl/" target="_blank">Lebowski</a> en <a href="https://www.barpasta.nl" target="_blank">Bar Pasta</a> had ik mijn eerste ervaring als bedrijfsleider in de Horeca. Ik was werkzaam bij beide zaken, en was verantwoordelijk voor het dagelijkse reilen en zeilen. Ik heb deze baan tijdens mijn inwerkperiode stopgezet omdat ik merkte dat ik mijn passie voor de Horeca kwijt was en een nieuwe uitdaging in een andere sector aan wilde gaan.</p>
+                    <figure class="werkfoto">
+                        <a href="https://www.barpasta.nl" target="_blank">
+                            <img src="Barpastaik.jpg" alt="Een foto van Michael aan het werk bij Bar Pasta" />
+                            <figcaption>Aan het werk bij Bar Pasta tijdens de Vierdaagsefeesten.</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="lebowbpWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="lebowbpbutton">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="lebowbpwerkzaamheden" style="display: none;">
                         <ul>
@@ -113,19 +120,19 @@
                             <li>Verantwoordelijkheid dragen voor het draaien van beide bars vanaf begin tot en met einde dienst.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://www.barpasta.nl" target="_blank">
-                            <img src="Barpastaik.jpg" width="320" height="320" alt="Een foto van Michael aan het werk bij Bar Pasta" />
-                            <figcaption>Aan het werk bij Bar Pasta tijdens de Vierdaagsefeesten.</figcaption>
-                        </a>
-                    </figure>
                 </div>
-                <div id="asteria manager" class="werkervaring">
+                <div id="asteria manager" class="werkervaring diveven">
                     <a id="asteriamanageranchor" class="ervaringanchor"></a>
                     <!--Mijn ervaring als floormanager binnen Hotel Asteria Venray-->
-                    <h3>Floormanager bij Hotel Restaurant Asteria; Venray: 2021 - 2022</h3>
-                    <figure class="banner">
+                    <h2>Floormanager</h2>
+                    <h4>Hotel Restaurant Asteria; Venray: 2021 - 2022</h4>
                     <p>In 2021 werd ik door de Hotelmanager gebeld met de vraag of ik terug wilde komen bij het <a href="https://www.asteria.nl/" target="_blank">Hotel Asteria</a> in managementfunctie. Dit aanbod heb ik met open armen aangenomen. Ik heb een jaar als floormanager gewerkt binnen Hotel Asteria, waar ik veel heb mogen ervaren. Ik heb mijn kennis van het bedrijf die ik had opgedaan als voltijdmedewerker gebruikt om verscheidene processen te vernieuwen en te verbeteren. Zo heb ik onder andere een drankenkaart ontworpen, een wijkindeling gecreëerd, bepaalde processen gestandaardiseerd en ben ik verantwoordelijk geweest voor het inwerkingsproces van ruim 15 nieuwe medewerkers.</p>
+                    <figure class="werkfoto">
+                        <a href="https://www.asteria.nl/" target="_blank">
+                            <img src="Cocktail vd maand.jpg" alt="Een foto van een cocktail ontworpen door Michael" />
+                            <figcaption>Deze poster gebruikten we om een van mijn Cocktails van de maand te promoten!</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="asteriaManagerWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="asteriamanagerbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="asteriamanagerwerkzaamheden" style="display: none;">
                         <ul>
@@ -181,19 +188,20 @@
                             </li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://www.asteria.nl/" target="_blank">
-                            <img src="Cocktail vd maand.jpg" width="400" height="500" alt="Een foto van een cocktail ontworpen door Michael" />
-                            <figcaption>Deze poster gebruikten we om een van mijn Cocktails van de maand te promoten!</figcaption>
-                        </a>
-                    </figure>
                     <p>Referentie: Restaurantmanager Yorick van der Veen - <a href = "mailto: restaurant-manager@asteria.nl">restaurant-manager@asteria.nl</a>.</p>
                 </div>
                 <div id="dfds" class="werkervaring">
                     <a id="dfdsanchor" class="ervaringanchor"></a>
                     <!--Mijn ervaring als orderpicker bij DFDS-->
-                    <h3>Orderpicker bij DFDS; Wijchen: 2020 - 2021</h3>
+                    <h2>Orderpicker</h2>
+                    <h4>DFDS; Wijchen: 2020 - 2021</h4>
                     <p>Tijdens de tweede Covid lockdown was er geen werk te vinden in de horeca. Gezien een van mijn favoriete aspecten aan de horeca voorraadbeheer was, besloot ik een carrière in de logistiek een poging te geven. Dit heb ik gedaan bij <a href="https://www.dfdswijchen.com/" target="_blank">DFDS Wijchen</a>. In deze sector merkte ik dat ik het sociale aspect van de Horeca erg miste, zowel met collega's als met klanten. Ik heb deze periode hard gewerkt bij dit bedrijf, maar merkte toch na geringe tijd dat de logistiek niet mijn roeping is.</p>
+                    <figure class="werkfoto">
+                        <a href="https://www.dfdswijchen.com/" target="_blank">
+                            <img src="DFDS banner.png" alt="De banner van DFDS" />
+                            <figcaption>DFDS Wijchen.</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="dfdsWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="dfdsbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="dfdswerkzaamheden" style="display: none;">
                         <ul>
@@ -205,17 +213,17 @@
                             <li>De gewenste verkooplabels voor klanten op onze producten plakken.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://www.dfdswijchen.com/" target="_blank">
-                            <img src="DFDS banner.png" width="500" height="300" alt="De banner van DFDS" />
-                            <figcaption>DFDS Wijchen.</figcaption>
-                        </a>
-                    </figure>
+ 
                 </div>
-                <div id="pacho" class="werkervaring">
+                <div id="pacho" class="werkervaring diveven">
                     <a id="pachoanchor" class="ervaringanchor"></a>
-                    <h3>Leidinggevende PACHO; Nijmegen: 2020</h3>
+                    <h2>Leidinggevende</h2>
+                    <h4>PACHO; Nijmegen: 2020</h4>
                     <p>In 2020 mocht ik bij Pacho aan de slag. Hier kreeg ik de mogelijkheid om als manager in dienst te treden. Aan dit bedrijf heb ik de meeste positieve ervaringen, en de loyaliteit die binnen mijn team is ontstaan bestaat nog steeds. Helaas werd de zaak verkocht zonder overname van personeel tijdens de pandemie.</p>
+                    <figure class="werkfoto">
+                        <img src="PachoMich.jpg" alt="Een foto van Michael in het interieur van PACHO" />
+                        <figcaption>Aan het werk bij PACHO! Hier kreeg ik mijn eerste ervaring met management.</figcaption>
+                    </figure>
                     <button onclick="pachoWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="pachobutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="pachowerkzaamheden" style="display: none;">
                         <ul>
@@ -245,15 +253,19 @@
                             <li>Meedraaien dagelijkse werkzaamheden.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="PachoMich.jpg" width="400" height="500" alt="Een foto van Michael in het interieur van PACHO" />
-                        <figcaption>Aan het werk bij PACHO! Hier kreeg ik mijn eerste ervaring met management.</figcaption>
-                    </figure>
+  
                 </div>
                 <div id="asteria medewerker" class="werkervaring">
                     <a id="asteriamedewerkeranchor" class="ervaringanchor"></a>
-                    <h3>Medewerker bediening Hotel Restaurant Asteria; Venray: 2018-2020</h3>
+                    <h2>Medewerker bediening</h2>
+                    <h4>Hotel Restaurant Asteria; Venray: 2018-2020</h4>
                     <p>Mijn eerste twee jaar bij Hotel Asteria waren mijn formatieve jaren. Hier heb ik geleerd te werken.</p>
+                    <figure class="werkfoto">
+                        <a href="https://www.asteria.nl/" target="_blank">
+                            <img src="Hotel Asteria.jpg" alt="Een foto van de buitenzijde van Hotel Asteria" />
+                            <figcaption>In dit Hotel langs de A73 heb ik drie jaar gewerkt!</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="asteriaMedewerkerWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="asteriamedewerkerbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="asteriamedewerkerwerkzaamheden" style="display: none;">
                         <ul>
@@ -287,17 +299,17 @@
                             </li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://www.asteria.nl/" target="_blank">
-                            <img src="Hotel Asteria.jpg" height="300" width="400" alt="Een foto van de buitenzijde van Hotel Asteria" />
-                            <figcaption>In dit Hotel langs de A73 heb ik drie jaar gewerkt!</figcaption>
-                        </a>
-                    </figure>
+
                 </div>
-                <div id="sjalot" class="werkervaring">
+                <div id="sjalot" class="werkervaring diveven">
                     <a id="sjalotanchor" class="ervaringanchor"></a>
-                    <h3>Eerste medewerker Restaurant de Sjalot; Nijmegen: 2017-2018</h3>
+                    <h2>Eerste medewerker</h2>
+                    <h4>Restaurant de Sjalot; Nijmegen: 2017-2018</h4>
                     <p>Bij Restaurant de Sjalot serveerden we diner in fine dining vorm. Hier heb ik veel geleerd over winespice combinaties, en hier heb ik veel over etiquette geleerd.</p>
+                    <figure class="werkfoto">
+                        <img src="De Sjalot.jfif" alt="Het exterieur van Restaurant de Sjalot." />
+                        <figcaption>Het exterieur van Restaurant de Sjalot.</figcaption>
+                    </figure>
                     <button onclick="sjalotWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="sjalotbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="sjalotwerkzaamheden" style="display: none;">
                         <ul>
@@ -318,15 +330,18 @@
                             <li>Opstarten en sluiten van restaurant.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="De Sjalot.jfif" width="410" height="306" alt="Het exterieur van Restaurant de Sjalot." />
-                        <figcaption>Het exterieur van Restaurant de Sjalot.</figcaption>
-                    </figure>
+              
                 </div>
                 <div id="festival" class="werkervaring">
                     <a id="festivalanchor" class="ervaringanchor"></a>
-                    <h3>Festival medewerker bij verscheidene festivals; Nederland: 2014 - 2016</h3>
+                    <h2>Festival medewerker bij verscheidene festivals; Nederland: 2014 - 2016</h2>
                     <p>Werken bij festivals heeft mij geïnspireerd om een opleiding binnen de Horeca te volgen. Ik heb tijdens mijn studie op festivals gewerkt als bijbaan. Dit heeft me in contact gebracht met veel mensen van verschillende achtergronden. Ik heb hier heel veel geleerd.</p>
+                    <figure class="werkfoto">
+                        <a href="https://valkhoffestival.nl/" target="_blank">
+                            <img src="Valkhof.jfif" alt="Het logo van het Valkhof Festival" />
+                            <figcaption>Het logo van Valkhof festival</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="festivalWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="festivalbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="festivalwerkzaamheden" style="display: none;">
                         <ul>
@@ -338,17 +353,17 @@
                             <li>Barhoofd; verantwoordelijk voor het bewaren en garanderen van algemene kwaliteit, het maken van taakverdelingen en aansturen van personeel.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://valkhoffestival.nl/" target="_blank">
-                            <img src="Valkhof.jfif" height="350" width="350" alt="Het logo van het Valkhof Festival" />
-                            <figcaption>Het logo van Valkhof festival</figcaption>
-                        </a>
-                    </figure>
+                  
                 </div>
-                <div id="taste" class="werkervaring">
+                <div id="taste" class="werkervaring diveven">
                     <a id="tasteanchor" class="ervaringanchor"></a>
-                    <h3>Leiddinggevende stage Taste of Belgium; Palm Beach - Aruba: 2016</h3>
+                    <h2>Leiddinggevende stage</h2>
+                    <h4>Taste of Belgium; Palm Beach - Aruba: 2016</h4>
                     <p>Een half jaar op Aruba heeft mij uitgebreid in staat gestelt om van een andere cultuur te genieten. Soms droom ik er nog steeds van om terug te gaan.</p>
+                    <figure class="werkfoto">
+                        <img src="TasteofBelgium.jpg" alt="Een foto van het interieur van Taste of Belgium" />
+                        <figcaption>Het interieur van Taste of Belgium op Aruba. One happy island!</figcaption>
+                    </figure>
                     <button onclick="tasteWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="tastebutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="tastewerkzaamheden" style="display: none;">
                         <ul>
@@ -362,14 +377,18 @@
                             <li>Kasboek invullen.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="TasteofBelgium.jpg" width="600" height="300" alt="Een foto van het interieur van Taste of Belgium" />
-                        <figcaption>Het interieur van Taste of Belgium op Aruba. One happy island!</figcaption>
-                    </figure>
+                    
                 </div>
                 <div id="claus" class="werkervaring">
                     <a id="clausanchor" class="ervaringanchor"></a>
-                    <h3>Receptie stage Claus Park Collection; Hoofddorp: 2015</h3>
+                    <h2>Receptie stage</h2>
+                    <h4>Claus Park Collection; Hoofddorp: 2015</h4>
+                    <figure class="werkfoto">
+                        <a href="https://clausbowling.nl/" target="_blank">
+                            <img src="Clausparkbowling.webp" alt="Een foto van het interieur van de bowlingbaan en 50's diner binnen Claus Park Collection" />
+                            <figcaption>Het interieur van de bowlingbaan en 50's diner waar het grootste deel van mijn werkzaamheden plaats vonden.</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="clausWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="clausbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="clauswerkzaamheden" style="display: none;">
                         <ul>
@@ -378,16 +397,16 @@
                             <li>Garderobe medewerker bij evenementen.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://clausbowling.nl/" target="_blank">
-                            <img src="Clausparkbowling.webp" width="320" height="295" alt="Een foto van het interieur van de bowlingbaan en 50's diner binnen Claus Park Collection" />
-                            <figcaption>Het interieur van de bowlingbaan en 50's diner waar het grootste deel van mijn werkzaamheden plaats vonden.</figcaption>
-                        </a>
-                    </figure>
+                    
                 </div>
-                <div id="riva" class="werkervaring">
+                <div id="riva" class="werkervaring diveven">
                     <a id="rivaanchor" class="ervaringanchor"></a>
-                    <h3>Bijbaan bediening Restaurant en Cocktail Lounge Riva; Nijmegen: 2014</h3>
+                    <h2>Bijbaan bediening</h2>
+                    <h4>Restaurant en Cocktail Lounge Riva; Nijmegen: 2014</h4>
+                    <figure class="werkfoto">
+                        <img src="Riva.jpg" alt="De banner van Riva." />
+                        <figcaption>De banner van Riva.</figcaption>
+                    </figure>
                     <button onclick="rivaWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="rivabutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="rivawerkzaamheden" style="display: none;">
                         <ul>
@@ -395,14 +414,16 @@
                             <li>Wijkloper.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="Riva.jpg" height="350" width="350" alt="De banner van Riva." />
-                        <figcaption>De banner van Riva.</figcaption>
-                    </figure>
+                    
                 </div>
                 <div id="jachtslot" class="werkervaring">
                     <a id="jachtslotanchor" class="ervaringanchor"></a>
-                    <h3>Bediening stage Jachtslot de Mookerheide; Molenhoek: 2014</h3>
+                    <h2>Bediening stage</h2>
+                    <h4>Jachtslot de Mookerheide; Molenhoek: 2014</h4>
+                    <figure class="werkfoto">
+                        <img src="Jachtslot.jpg" alt="Een foto van Jachtslot de Mookerheide" />
+                        <figcaption>Dit is het Jachtslot, een monument dat voorheen fungeerde als hotel.</figcaption>
+                    </figure>
                     <button onclick="jachtslotWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="jachtslotbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="jachtslotwerkzaamheden" style="display: none;">
                         <ul>
@@ -410,14 +431,18 @@
                             <li>Bar- en floor medewerker bij evenementen en partijen</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="Jachtslot.jpg" height="260" width="350" alt="Een foto van Jachtslot de Mookerheide" />
-                        <figcaption>Dit is het Jachtslot, een monument dat voorheen fungeerde als hotel.</figcaption>
-                    </figure>
+                    
                 </div>
-                <div id="parcs" class="werkervaring">
+                <div id="parcs" class="werkervaring diveven">
                     <a id="parcsanchor" class="ervaringanchor"></a>
-                    <h3>Medewerker bediening Center Parcs Heijderbos; Heijen: 2013-2014</h3>
+                    <h2>Medewerker bediening</h2>
+                    <h4>Center Parcs Heijderbos; Heijen: 2013-2014</h4>
+                    <figure class="werkfoto">
+                        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HB_vakantiepark-het-heijderbos" target="_blank">
+                            <img src="Grand Cafe.jpg" alt="Een foto van het Grand Café in Center Parcs Heijderbosch." />
+                            <figcaption>Dit tropische paradijs ligt midden in Heijen! Dit was mijn hoofdafdeling.</figcaption>
+                        </a>
+                    </figure>
                     <button onclick="parcsWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="parcsbutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="parcswerkzaamheden" style="display: none;">
                         <ul>
@@ -435,16 +460,16 @@
                             <li>Afwasser Grand Café.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <a href="https://www.centerparcs.nl/nl-nl/nederland/fp_HB_vakantiepark-het-heijderbos" target="_blank">
-                            <img src="Grand Cafe.jpg" alt="Een foto van het Grand Café in Center Parcs Heijderbosch." height="300" width="500" />
-                            <figcaption>Dit tropische paradijs ligt midden in Heijen! Dit was mijn hoofdafdeling.</figcaption>
-                        </a>
-                    </figure>
+                  
                 </div>
                 <div id="kiste" class="werkervaring">
                     <a id="kisteanchor" class="ervaringanchor"></a>
-                    <h3>Bijbaan snackbar Cafetaria Kiste Trui; Middelaar: 2011-2012</h3>
+                    <h2>Bijbaan snackbar</h2>
+                    <h4>Cafetaria Kiste Trui; Middelaar: 2011-2012</h4>
+                    <figure class="werkfoto">
+                        <img src="Kiste Trui.jpg" alt="Het logo van café Kiste Trui" />
+                        <figcaption>Dit standbeeld is van de lokale legende van <a href="https://nl.wikipedia.org/wiki/Kiste_Trui" target="_blank">Kiste Trui.</a>, waarnaar het cafetaria vernoemd was.</figcaption>
+                    </figure>
                     <button onclick="kisteWerkzaamhedenTonen()" class="werkzaamhedenbutton" id="kistebutton" type="button">Werkzaamheden tonen</button>
                     <div class="werkzaamheden" id="kistewerzaamheden" style="display: none;">
                         <ul>
@@ -454,14 +479,11 @@
                             <li>Aanvullen en bestellijst doorgeven.</li>
                         </ul>
                     </div>
-                    <figure class="werkfoto">
-                        <img src="Kiste Trui.jpg" alt="Het logo van café Kiste Trui" width="300" height="300" />
-                        <figcaption>Dit standbeeld is van de lokale legende van <a href="https://nl.wikipedia.org/wiki/Kiste_Trui" target="_blank">Kiste Trui.</a>, waarnaar het cafetaria vernoemd was.</figcaption>
-                    </figure>
+                    
                 </div>
-                <div id="overig" class="werkervaring">
+                <div id="overig" class="werkervaring diveven">
                     <a id="overiganchor" class="ervaringanchor"></a>
-                    <h3>Overige werkzaamheden</h3>
+                    <h2>Overige werkzaamheden</h2>
                     <ul>
                         <li>Eenmalig personeel geregeld voor en horeca advies geleverd aan een familievriend voor zijn grote verjaardagsfeest.</li>
                         <li>Korte periode in een speelgoedwinkel gewerkt, waar ik heb gestockt en de kassa heb bemand.</li>
@@ -472,7 +494,7 @@
             </section>
         </article>
         <footer>
-            <h5><a href= "mailto: michael.vlaar@live.nl">michael.vlaar@live.nl</a></h5>
+            <h5 class="footer col-m-12"><a href= "mailto: michael.vlaar@live.nl">michael.vlaar@live.nl</a></h5>
         </footer>  
     </body>
         <script>

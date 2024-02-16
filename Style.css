@@ -1,246 +1,198 @@
-﻿* {
-    margin: 0px, auto;
+﻿/* Kleurenschema:
+orange background: rgba(255, 165, 0, 0.8)    
+purple background: rgba(106, 90, 205, 0.8)
+Text white: rgba(240, 240, 240, 1)
+*/
+
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
     /* Divs */
 
 body {
     font-family: 'Garamond';
-    color: lightgrey;
-    background-color: black;
-    margin: 0rem auto;
-    padding: 0rem;
-    box-sizing: border-box;
-}
-
-article {
-    padding: 0rem 1rem;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-}
-
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    text-transform: uppercase;
-    color: black;
     font-size: 1rem;
-    top: 0;
-    background-color: darkred;
-    border: 0.25rem inset grey;
-    margin: 0px auto;
-    text-align: center;
-    text-wrap: nowrap;
-    overflow-x: auto;
-    overflow-y: auto;
+    padding: 1rem;
+    color: #fff;
+    background-color: hsl(240, 50%, 30%);
+    text-align: justify;
 }
 
 nav {
+    z-index: 10;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1rem;
     display: inline-block;
     vertical-align: top;
-    right: 0px;
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom:0px;
-    background-color: black;
     z-index: 10;
-    padding: 0rem;
-}
-
-table {
-    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
     /* Element tags */
 
 h1 {
+    text-transform: uppercase;
     font-weight: bolder;
-    display: inline-block;
-    vertical-align: top;
-    margin: auto 0rem;
     font-size: 2rem;
-    margin: 1rem;
-    padding: 0.25em 0em;
-    width: 30rem;
-    left: 0px;
-    text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: grey;
-    position: absolute;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0.7rem 0rem;
 }
 
 h2 {
-    text-align: center;
     text-transform: uppercase;
-    margin: 1rem 0rem;
-    padding: 1rem 0rem;
     font-weight: 900;
-    font-size: 2rem;
-    background-color: darkred;
-    color: grey;
-    text-decoration: underline;
-    border: 0.5rem inset grey;
-    border-radius: 5px;
+    font-size: 1.8rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 h3 {
-    margin: 1rem 0rem;
-    padding: 1rem 1rem;
-    text-align: center;
+    font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: black;
-    color: grey;
-    border: 0.5rem solid grey;
-    border-radius: 5px;
+    padding-top: 1rem;
 }
 
 h4 {
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     font-style: italic;
-    margin: 0.5rem;
-    padding: 0.5rem;
 }
 
 h5 {
-    color: red;
     font-size: 1rem;
-    padding: 0.5rem;
-    text-align: center;
-    margin: 0px;
-}
-
-a {
-    color: darkred;
 }
 
 img {
-    border: 0.5rem inset black;
-    border-radius: 5px;
-    width: 90%;
+    padding-top: 1rem;
+    max-width: 75%;
     height: auto;
+    max-height: 50%;
 }
 
-p {
-    font-size: 1.2rem;
-    color: black;
-    text-align: center;
-    background-color: grey;
-    border: 0.5rem inset black;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-ul {
-    text-align: left;
-    padding: 1rem 3rem;
-    border: 0.5rem inline black;
-}
-
-ul ul {
-    padding: 0rem 2rem;
-    text-align:left;
+a {
+    color: hsl(45, 100%, 50%)
 }
 
 li {
-    color: black;
+    display: list-item;
+    padding: 0px 0.2rem;
+  }
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+table {
+    max-width: 100%;
 }
 
 th {
-    font-size: 1rem;
     font-weight: bold;
-    text-align: center;
-    border: 0.5rem inset black;
-    padding: 0.5rem 1rem;
-    background-color: grey;
-    color: black;
 }
 
 td {
-    font-size: 1rem;
-    text-align: center;
-    border: 0.25rem inset black;
-    padding: 0.5rem 1rem;
-    background-color: grey;
-    color: black;
+    padding: 0.2rem;
 }
 
 button {
-    background-color:black;
     display: block;
     text-align: center;
-    border: 0.5rem inset grey;
-    padding: 0.5rem;
     font-weight: bold;
-    width: 25rem;
     position: relative;
-    border-radius: 5px;
-    margin: auto;
-    color: darkred;
     cursor: pointer;
 }
 
 figcaption {
-    padding-top: 1rem;
-    color: grey;
     font-weight: bold;
     opacity: 75%;
 }
     /* ID's */
 
-
-#infoovermij { 
-    text-align: center;
+#gegevenssectie{ 
     position: relative;
+    padding: 0px 1rem;
+    background-color: hsl(35, 100%, 50%);
+    color: #000;
+    padding-bottom: 1rem;
 }
 
-#overmij {
-    text-align: justify;
+#gegevensfoto {
+    text-align: center
 }
 
-#gegevens {
+#gegevensfotoid {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+#gegevenstabel1 {
     width: 100%;
-    text-align: center;
-    position: relative;
+}
+
+#gegevensdiv3 {
+    overflow-x: scroll;
+}
+
+#informatiesectie {
+    padding: 0px 1rem;
+    color: hsl(0,100,100);
+}
+#informatiediv1 p {
+    text-align: justify;
 }
 
 #overig {
     text-align: initial;
-    margin-bottom: 0px;
     bottom: 0;
 }
 
-#overzicht {
-    width: 27%;
-    background-color: darkred;
-    padding: 1rem;
-    z-index: 9;
-    top: 7rem;
-    bottom: 2rem;
-    right: 1rem;
-    border: 0.5rem inset grey;
-    position: fixed;
-    vertical-align: top;
-    border-radius: 5px;
-    margin-top: 1rem;
-    overflow-y: scroll;
-}
-
-
-#ervaringtabel {
+#overzichtsectie {
+    position: relative;
+    padding: 0px 1rem;
+    background-color: hsl(35, 100%, 50%);
+    color: #000;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
-#werkervaring{
-    display: block;
-    width: 67%;
+#ervaringsectie {
+    padding: 0px 1rem;
+    max-height:100%;
+}
+
+#overzichttabel {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 1rem;
+    font-weight:bold;
+}
+
+#overzichttabel a {
+    color: hsl(240, 100%, 50%);;
+}
+
+#overzichttabel td {
+    text-align: left;
+    width: 50%;
 }
 
 /* Ervaring ID's */
@@ -250,19 +202,14 @@ figcaption {
 
 #GameScreen {
     height: 35rem;
-    border: 0.5rem inset grey;
     overflow-y: auto;
 }
 
 #GameTekst {
-    background-color: black;
-    color: green;
     text-align: justify;
 }
 
 #gevechtsLog {
-    background-color: black;
-    color: green;
     text-align: justify;
     overflow-y: scroll;
     height: 10rem;
@@ -274,157 +221,81 @@ figcaption {
 }
 
 /* Classes */
+
+.footer {
+    padding: 1rem;
+}
+
 .navigatie {
     font-weight: bold;
     display: inline-block;
     vertical-align: top;
-    margin: 1rem;
-    border: 0.5rem inset grey;
-    border-radius: 5px;
-    padding: 0.25em 0em;
-    width: 10rem;
-    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 0,5rem;
-    word-spacing: 0,5rem;
-    background-color: black;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-p.huidig {
-    padding: 0px;
-    margin: 0px;
-    font-size: 1.5rem;
-    color: grey;
-    text-align: center;
-    text-decoration: underline;
-    border: none;
-    background-color: black;
-}
 
-.overmij {
+.gegevensclass {
     display: inline-block;
     position: relative;
-    padding: 1rem;
-    margin: 1rem;
     vertical-align: top;
-    border: 0.5rem inset grey;
-    background-color: darkred;
-    max-width: 50%;
-    min-height: 25%;
     overflow-x: auto;
     overflow-y: auto;
-}
-
-
-
-/*h2 {
-    text-align: center;
-    text-transform: uppercase;
-    margin: 1rem 0rem;
-    padding: 1rem 0rem;
-    font-weight: 900;
-    font-size: 2rem;
-    background-color: darkred;
-    color: grey;
-    text-decoration: underline;
-    border: 0.5rem inset grey;
-    border-radius: 5px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} 
-*/
-    /* Classes binnen Gegevens */
-
-.info {
-    text-align: justify;
-    padding: 1rem;
-    margin: 1rem;
-    display: inline-block;
-    vertical-align: top;
-    border: 0.5rem inset grey;
-    background-color: darkred;
-    border-radius: 5px;
-    min-height: 25%;
-    max-width: 50%;
-    overflow-x: auto;
-    overflow-y: auto;
-}
-
-.info ul {
-    font-size: 1.5rem;
-    list-style-type: square;
-    background-color: grey;
-    border: 0.5rem inline black;
-}
-
-.info ul ul {
-    list-style-type:circle;
 }
 
     /* Classes binnen Ervaring */
 
 .werkervaring {
-    padding: 1rem;
-    display: block;
+    padding: 0px 1rem;
+    padding-bottom: 1rem;
+}
+
+.werkervaring figure {
     text-align: center;
-    border: 0.5rem inset grey;
-    background-color: darkred;
-    position: relative;
-    border-radius: 5px;
-    margin-top: 3rem;
 }
 
 .werkzaamheden {
     left: 0px;
     position: relative;
     text-align: left;
-    border: 0.5rem inset black;
-    background-color: grey;
-    border-radius: 5px;
-    margin: 1rem 0rem;
 }
 
-.werkzaamheden li {
-    font-size: 1.25rem;
-    list-style-type:square;
+.roweven {
+    background-color:hsl(35, 100%, 40%);
 }
 
-.werkzaamheden li li {
-    list-style-type: circle;
+.diveven {
+    background-color:hsl(240, 50%, 15%);
 }
-
-.banner {
-    text-align: center;
-    position: relative;
-    float: none;
-    padding: 1rem;
-    margin: 1rem;
-}
-
 .werkfoto {
     position: relative;
-    padding: 1rem;
-    margin: 1rem;
     display: inline-block;
     vertical-align: top;
 }
 
 .ervaringanchor {
     z-index: 0;
-    position: absolute;
-    top: -15rem;
+}
+
+.werkervaring button {
+    width: 50%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: hsl(35, 100%, 50%);
+}
+
+.werkzaamheden {
+    padding: 1rem;
 }
 
 [target="_blank"] {
-    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 /*Game classes */
 .gameButton:hover {
-    border-color: darkred;
     transition-duration: 0.3s;
 }
 
@@ -432,15 +303,9 @@ p.huidig {
     font-weight: bold;
     display: none;
     vertical-align: top;
-    margin: 1rem;
-    border: 0.5rem inset grey;
-    border-radius: 5px;
-    padding: 0.25rem 0.25rem;
-    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0,5rem;
     word-spacing: 0,5rem;
-    background-color: black;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 10rem;
@@ -448,7 +313,6 @@ p.huidig {
 }
 
 .overworldButton:hover {
-    border-color: darkred;
     transition-duration: 0.3s;
 }
 
@@ -456,15 +320,9 @@ p.huidig {
     font-weight: bold;
     display: none;
     vertical-align: top;
-    margin: 1rem;
-    border: 0.5rem inset grey;
-    border-radius: 5px;
-    padding: 0.25em 0.25em;
-    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0,5rem;
     word-spacing: 0,5rem;
-    background-color: black;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 6.5rem;
@@ -474,3 +332,200 @@ p.huidig {
 .GameDiv {
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* Test --- Test */
+
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    body {
+        font-size: 0.9rem;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    h4 {
+        font-size: 1.0rem;
+    }
+    aside {
+        position: fixed;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    body {
+        font-size: 1.0rem;
+    }
+    #overzichttabel {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    h4 {
+        font-size: 1.1rem;
+    }
+    aside {
+        position: fixed;
+    }
+  }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 960px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    body {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    aside {
+        position: fixed;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1280px) {
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+    body {
+        font-size: 1.3rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    aside {
+        position: fixed;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1920px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+    body {
+        font-size: 1.4rem;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    aside {
+        position: fixed;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

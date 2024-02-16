@@ -11,7 +11,7 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="col-xs-12 col-s-12 col-m-12" >
                 <div class="navigatie">
                     <p class="huidig">Home</p>
                 </div>
@@ -24,13 +24,18 @@
             </nav>
         </header>
         <article>
-            <section id="infoovermij">
-                <h2>Over Mij</h2>
+            <section id="gegevenssectie" class="col-xs-12 col-s-4 col-m-4">
+                <h1 class="col-xs-12 col-s-12 ">Michael Vlaar</h1>
                 <!-- Een tabel met persoonlijke gegevens-->
-                <div id="persoonlijkegegevens" class="overmij">
-                    <h3>Persoonlijke gegevens</h3>
-                    <table id="persoonlijkegegevenstabel">
+                <div id="gegevensfoto" class="gegevensclass col-m-12">
+                    <img id="gegevensfotoid" src="Zelfportret.jpg" alt="Een foto van Michael"/>
+                </div>
+                <div id="gegevensdiv1" class="gegevensclass col-m-12">
+                    <table id="gegevenstabel1">
                         <tbody>
+                            <tr>
+                                <th colspan="2"><h4>Persoonlijke gegevens</h4></th>
+                            </tr>
                             <tr>
                                 <td>Geboortedatum</td>
                                 <td>24/08/1995</td>
@@ -58,21 +63,18 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="fotovanmij" class="overmij">
-                    <h3>Dit ben ik!</h3>
-                    <img src="Zelfportret.jpg" alt="Een foto van Michael"/>
+                <div id="gegevensdiv2" class="gegevensclass col-m-12">
+                    <!--Een lijst van de talen die ik beheers-->
+                    <h4>Talen</h4>
+                    <ul>
+                        <li>Engels vloeiend spreken en schrijven</li>
+                        <li>Nederlands vloeiend spreken en schrijven</li>
+                        <li>Duits goed spreken</li>
+                    </ul>
                 </div>
-                <div id="overmij" class="overmij">
-                    <!--Een korte samenvatting van wie ik ben-->
-                    <h3>Over mij</h3>
-                    <p>Ik heb ruim 10 jaar ervaring in de horeca. Sinds kort na het afronden van mijn opleiding, Horeca Ondernemer & Manager niveau 4 op het ROC Nijmegen, ben ik fulltime werkzaam in de horeca, o.a. als leidinggevende. Ondanks mijn jaren van ervaring in deze branche heb ik toch besloten dat het tijd is voor een nieuwe uitdaging. Mijn sterke eigenschappen zijn dat ik gestructureerd werk, dat ik het oogpunt van de consument altijd in acht neem en dat ik team gedreven ben; zowel in samenwerking, in training en in aansturing.</p>
-                </div>
-            </section>
-            <section id="gegevens">
-                <h2>Persoonlijke informatie</h2>
-                <div class="info">
+                <div id="gegevensdiv3" class="gegevensclass col-m-12">
                     <!--Een lijst van behaalde relevante diploma's-->
-                    <h3>Diploma's</h3>
+                    <h4>Diploma's</h4>
                     <ul>
                         <li>Codecademy - Learn Javascript Course Certificate 2023</li>
                         <li>Codecademy - Learn HTML Course Certificate 2023</li>
@@ -89,27 +91,25 @@
                         <li>Instituut Pica, Diploma Computertypen, 2007</li>
                     </ul>
                 </div>
-                <div class="info">
+            </section>
+            <section id="informatiesectie" class="info col-xs-12 col-s-8 col-m-8">
+                <h1>Informatie</h1>
+                <div id="informatiediv1" class="infoclass col-m-12">
+                    <!--Een korte samenvatting van wie ik ben-->
+                    <p>Ik heb ruim 10 jaar ervaring in de horeca. Sinds kort na het afronden van mijn opleiding, Horeca Ondernemer & Manager niveau 4 op het ROC Nijmegen, ben ik fulltime werkzaam in de horeca, o.a. als leidinggevende. Ondanks mijn jaren van ervaring in deze branche heb ik toch besloten dat het tijd is voor een nieuwe uitdaging. Mijn sterke eigenschappen zijn dat ik gestructureerd werk, dat ik het oogpunt van de consument altijd in acht neem en dat ik team gedreven ben; zowel in samenwerking, in training en in aansturing.</p>
+                </div>
+                <div id="informatiediv2" class="infoclass col-m-12">
                     <!--Een lijst van mijn professionele kwaliteiten-->
-                    <h3>Professionele Kwaliteiten</h3>
+                    <h2>Professionele Kwaliteiten</h2>
                     <ul>
                         <li>Liefde voor het verzekeren van een goede beleving van de klant</li>
                         <li>Talent voor het creëren van structuur en een prettige werkomgeving</li>
                         <li>Begaan met inwerking, coaching en opleiding van nieuwe medewerkers</li>
                     </ul>
                 </div>
-                <div class="info">
-                    <!--Een lijst van de talen die ik beheers-->
-                    <h3>Talen</h3>
-                    <ul>
-                        <li>Engels vloeiend spreken en schrijven</li>
-                        <li>Nederlands vloeiend spreken en schrijven</li>
-                        <li>Duits goed spreken</li>
-                    </ul>
-                </div>
-                <div class="info">
+                <div id="informatiediv3" class="infoclass col-m-12">
                     <!--Een lijst van de computerkennis waar ik over beschik-->
-                    <h3>Computerkennis</h3>
+                    <h2>Computerkennis</h2>
                     <ul>
                         <li>
                             Gewend te werken met programma’s zoals:
@@ -127,9 +127,9 @@
                         <li>Kennis van HTML, CSS en Javascript</li>
                     </ul>
                 </div>
-                <div class="info">
+                <div id="informatiediv4" class="infoclass col-m-12">
                     <!--Een lijst van mijn hobby's-->
-                    <h3>Hobby's en persoonlijke interesses</h3>
+                    <h2>Hobby's en persoonlijke interesses</h2>
                     <ul>
                         <li>Video games</li>  
                         <li>Bordspellen</li>
@@ -143,7 +143,7 @@
             </section>
         </article>
         <footer>
-            <h5><a href= "mailto: michael.vlaar@live.nl">michael.vlaar@live.nl</a></h5>
+            <h5 class="footer col-m-12"><a href= "mailto: michael.vlaar@live.nl">michael.vlaar@live.nl</a></h5>
         </footer>  
     </body>
 </html>
